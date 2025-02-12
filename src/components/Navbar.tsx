@@ -82,7 +82,7 @@ const Navbar = ({
                 title='ini logo'
                 className='text-3xl font-extrabold text-gray-800'
               >
-                JAPERNIK
+                IrcStore
               </div>
             </Link>
             <div
