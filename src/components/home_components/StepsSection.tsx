@@ -11,39 +11,39 @@ const StepsSection = () => {
   const steps = [
     {
       icon: <RiNumber1 />,
-      title: 'Pilih Jasa',
+      title: 'Siapkan Referensi',
       description:
-        'Pilih kategori jasa yang Anda butuhkan untuk pernikahan, seperti fotografi, dekorasi, atau catering',
+        'Screenshot contoh gantungan kunci yang diinginkan atau siapkan referensi foto.',
     },
     {
       icon: <RiNumber2 />,
-      title: 'Kontak Penyedia Jasa',
+      title: 'Hubungi Customer Service',
       description:
-        'Hubungi penyedia jasa yang dipilih untuk menanyakan ketersediaan, detail layanan, dan harga.',
+        'Berikan penjelasan mengenai desain yang diinginkan, sertakan referensi, dan pilih jenis gantungan (ballchain/keyring/tanpa gantungan).',
     },
     {
       icon: <RiNumber3 />,
-      title: 'Buat Pesanan',
+      title: 'Konfirmasi & Pembayaran',
       description:
-        'Setelah mendapatkan informasi yang diperlukan, buat pesanan dengan penyedia jasa, termasuk mengonfirmasi tanggal, layanan, dan biaya.',
+        'Kami akan memberikan total biaya. Pembeli dapat melakukan transfer atau memilih COD.',
     },
     {
       icon: <RiNumber4 />,
-      title: 'Eksekusi Jasa',
+      title: 'Proses Pembuatan',
       description:
-        'Pada hari pernikahan, penyedia jasa akan melaksanakan layanan sesuai kesepakatan.',
+        'Kami memastikan desain sesuai keinginan, lalu mengirimnya ke pencetak.',
     },
     {
       icon: <RiNumber5 />,
-      title: 'Konfirmasi Pesanan',
+      title: 'Produksi & Pengiriman',
       description:
-        'Setelah layanan selesai, konfirmasikan bahwa semua telah dilakukan sesuai perjanjian. Berikan rating dan ulasan untuk penyedia jasa.',
+        'Pencetak mencetak gantungan kunci, lalu mengirimkannya ke kurir.',
     },
     {
       icon: <CiFaceSmile />,
-      title: 'Selesai',
+      title: 'Barang Diterima',
       description:
-        'Proses pemesanan jasa selesai. Anda telah mendapatkan layanan yang diperlukan untuk pernikahan Anda.',
+        'Kurir mengirim barang ke pembeli. Jika memilih COD, pembayaran dilakukan saat barang diterima.',
     },
   ];
 

@@ -76,6 +76,25 @@ const Test = () => {
                 </div>
               ))}
             </div>
+            <div className='mt-10 flex w-full items-center justify-center'>
+              <a
+                href='#'
+                className='rounded-lg bg-black px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
+              >
+                Lihat Selengkapnya -&gt;
+              </a>
+            </div>
+            <div className='mt-10 flex w-full flex-col items-center justify-center'>
+              <a
+                href='#'
+                className='rounded-lg bg-green-500 px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
+              >
+                Hubungi Customer Service
+              </a>
+              <p className='mt-2 text-sm text-gray-500'>
+                Jangan ragu menghubungi kami, kami senang anda bertanya 😇
+              </p>
+            </div>
           </div>
         </div>
       </div>

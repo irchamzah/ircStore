@@ -85,7 +85,7 @@ const Navbar = ({
                 IrcStore
               </div>
             </Link>
-            <div
+            {/* <div
               title='SEARCH FORMMMMMMMMMM'
               className={`hidden w-full justify-center overflow-hidden sm:flex`}
             >
@@ -142,9 +142,9 @@ const Navbar = ({
               <button className='h-full'>
                 <FiMenu className='' />
               </button>
-            </div>
+            </div> */}
           </div>
-          <div
+          {/* <div
             title='SEARCH FORMMMMMMMMMMMMMMMMM'
             className={`mx-6 flex justify-center overflow-hidden pb-6 sm:hidden`}
           >
@@ -167,9 +167,9 @@ const Navbar = ({
                 </div>
               </button>
             </div>
-          </div>
+          </div> */}
         </div>
-        <div
+        {/* <div
           title='LIST MENU'
           className={`hidden min-h-10 border-b bg-white sm:block`}
         >
@@ -192,12 +192,12 @@ const Navbar = ({
               </LeftRightButton_2>
             </div>
           </div>
-        </div>
+        </div> */}
       </nav>
 
-      <div className='overlay fixed inset-0 z-30 hidden bg-black opacity-50'></div>
+      {/* <div className='overlay fixed inset-0 z-30 hidden bg-black opacity-50'></div> */}
 
-      <div className='mobile-menu fixed right-0 top-0 z-50 hidden h-screen w-72 overflow-auto bg-white px-6 py-[22px] text-gray-900'>
+      {/* <div className='mobile-menu fixed right-0 top-0 z-50 hidden h-screen w-72 overflow-auto bg-white px-6 py-[22px] text-gray-900'>
         <div className='mb-5 flex justify-end'>
           <button className='closeButton items-end'>
             <IoClose className='text-3xl' />
@@ -230,7 +230,7 @@ const Navbar = ({
             </Link>
           ))}
         </div>
-      </div>
+      </div> */}
     </>
   );
 };

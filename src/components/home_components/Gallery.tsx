@@ -53,9 +53,14 @@ const Gallery = () => {
     <>
       <div className='mx-6 mb-32 mt-20 lg:mb-12'>
         <div className='mx-auto max-w-7xl'>
-          <h2 className='mb-10 text-2xl font-semibold text-gray-900 md:text-3xl lg:text-4xl'>
-            Galeri
+          <h2 className='mb-5 text-2xl font-semibold text-gray-900 md:text-3xl lg:text-4xl'>
+            Contoh Gantungan Kunci
           </h2>
+          <p className='font-base text-md mb-10 sm:text-xl'>
+            Silahkan di Screenshot salah satu contoh ganci dan kirim ke CS kami
+            untuk referensi kami membuat Gantungan Kunci anda. Anda juga bisa
+            request full custom desain menggunakan foto sendiri.
+          </p>
 
           <div className='grid grid-cols-2 gap-4 lg:hidden'>
             <div className='flex flex-col gap-4'>
@@ -90,6 +95,27 @@ const Gallery = () => {
                   </div>
                 </div>
               ))}
+            </div>
+          </div>
+          <div className='flex flex-col items-center justify-center lg:hidden'>
+            <div className='mt-10 flex w-full items-center justify-center'>
+              <a
+                href='#'
+                className='rounded-lg bg-black px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
+              >
+                Lihat Selengkapnya -&gt;
+              </a>
+            </div>
+            <div className='mt-10 flex w-full flex-col items-center justify-center'>
+              <a
+                href='#'
+                className='rounded-lg bg-green-500 px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
+              >
+                Hubungi Customer Service
+              </a>
+              <p className='mt-2 text-xs text-gray-500'>
+                Jangan ragu menghubungi kami, kami senang anda bertanya 😇
+              </p>
             </div>
           </div>
         </div>
