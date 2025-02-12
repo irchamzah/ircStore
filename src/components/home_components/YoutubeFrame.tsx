@@ -6,7 +6,7 @@ const YouTubeFrame = () => {
       <div className='aspect-auto w-full max-w-7xl rounded'>
         <iframe
           className='h-[589px] w-full rounded-lg'
-          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=0&loop=1`}
+          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1`}
           title='YouTube video player'
           allow='autoplay'
           allowFullScreen

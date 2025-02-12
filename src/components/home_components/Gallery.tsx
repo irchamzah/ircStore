@@ -1,13 +1,15 @@
 'use client';
 
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<Image | null>(null);
+  const router = useRouter();
 
-  // Membuat array menjadi setengah
   const images: any = [];
 
   function createImageArray(numImages: number) {
@@ -17,19 +19,15 @@ const Gallery = () => {
         src: `/images/random_image/img${index}.jpg`,
       });
     }
-
     return images;
   }
-  const photos = createImageArray(12); // ubah angkanya untuk menampilkan jumlah foto yang ditampilkan
+
+  const photos = createImageArray(12);
   function bagiArraySetengah(array: any[]) {
     const tengah = Math.ceil(array.length / 2);
-    const bagianPertama = array.slice(0, tengah);
-    const bagianKedua = array.slice(tengah);
-    return [bagianPertama, bagianKedua];
+    return [array.slice(0, tengah), array.slice(tengah)];
   }
-  const hasilPembagian = bagiArraySetengah(photos);
-  const photos1 = hasilPembagian[0];
-  const photos2 = hasilPembagian[1];
+  const [photos1, photos2] = bagiArraySetengah(photos);
 
   interface Image {
     id: number;
@@ -40,8 +38,6 @@ const Gallery = () => {
     if (image.src) {
       setSelectedImage(image);
       setIsModalOpen(true);
-    } else {
-      console.error('Image source is undefined');
     }
   };
 
@@ -52,7 +48,7 @@ const Gallery = () => {
   return (
     <>
       <div className='mx-6 mb-32 mt-20 lg:mb-12'>
-        <div className='mx-auto max-w-7xl'>
+        <div className='mx-auto max-w-7xl text-center'>
           <h2 className='mb-5 text-2xl font-semibold text-gray-900 md:text-3xl lg:text-4xl'>
             Contoh Gantungan Kunci
           </h2>
@@ -62,20 +58,19 @@ const Gallery = () => {
             request full custom desain menggunakan foto sendiri.
           </p>
 
+          {/* Grid Gambar */}
           <div className='grid grid-cols-2 gap-4 lg:hidden'>
             <div className='flex flex-col gap-4'>
               {photos1.map((photo, index) => (
                 <div key={index} className='hover:opacity-90'>
-                  <div>
-                    <Image
-                      onClick={() => openModal(photo)}
-                      width={400}
-                      height={400}
-                      className='h-full w-full max-w-full rounded-lg object-cover'
-                      src={photo.src}
-                      alt=''
-                    />
-                  </div>
+                  <Image
+                    onClick={() => openModal(photo)}
+                    width={400}
+                    height={400}
+                    className='h-full w-full max-w-full rounded-lg object-cover'
+                    src={photo.src}
+                    alt=''
+                  />
                 </div>
               ))}
             </div>
@@ -83,49 +78,45 @@ const Gallery = () => {
             <div className='flex flex-col gap-4'>
               {photos2.map((photo, index) => (
                 <div key={index} className='hover:opacity-90'>
-                  <div>
-                    <Image
-                      onClick={() => openModal(photo)}
-                      width={400}
-                      height={400}
-                      className='h-full w-full max-w-full rounded-lg object-cover'
-                      src={photo.src}
-                      alt=''
-                    />
-                  </div>
+                  <Image
+                    onClick={() => openModal(photo)}
+                    width={400}
+                    height={400}
+                    className='h-full w-full max-w-full rounded-lg object-cover'
+                    src={photo.src}
+                    alt=''
+                  />
                 </div>
               ))}
             </div>
           </div>
-          <div className='flex flex-col items-center justify-center lg:hidden'>
-            <div className='mt-10 flex w-full items-center justify-center'>
-              <a
-                href='#'
-                className='rounded-lg bg-black px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
-              >
-                Lihat Selengkapnya -&gt;
-              </a>
-            </div>
-            <div className='mt-10 flex w-full flex-col items-center justify-center'>
-              <a
-                href='#'
-                className='rounded-lg bg-green-500 px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
-              >
-                Hubungi Customer Service
-              </a>
-              <p className='mt-2 text-xs text-gray-500'>
-                Jangan ragu menghubungi kami, kami senang anda bertanya 😇
+
+          {/* Tombol Aksi */}
+          <div className='mt-10 flex flex-col gap-4 md:flex-row md:justify-center lg:hidden'>
+            <Link href='/products-page'>
+              <p className='rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-blue-700'>
+                Lihat Semua Desain Yang Tersedia -&gt;
               </p>
-            </div>
+            </Link>
+            <a
+              href='https://wa.me/6285117038583?text=Permisi..%20saya%20mau%20tanya%20soal%20gantungan%20kuncinya'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='rounded-lg bg-green-600 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-green-700'
+            >
+              Hubungi Customer Service -&gt;
+            </a>
           </div>
+
+          <p className='mt-4 text-gray-600 lg:hidden'>
+            Jangan ragu menghubungi kami, kami senang anda bertanya 😇
+          </p>
         </div>
       </div>
+
+      {/* Modal Gambar */}
       {isModalOpen && (
-        <div className='animated faster fadeIn fixed inset-0 z-50 flex items-center justify-center overflow-auto'>
-          <div
-            className='fixed inset-0 bg-black opacity-75'
-            onClick={closeModal}
-          />
+        <div className='fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75'>
           <div className='relative mx-6 max-w-2xl rounded-lg bg-black p-1'>
             <Image
               className='max-h-full max-w-full rounded-lg'
@@ -134,6 +125,12 @@ const Gallery = () => {
               src={selectedImage?.src!}
               alt={`Art ${selectedImage?.id}`}
             />
+            <button
+              onClick={closeModal}
+              className='absolute right-3 top-3 rounded-full bg-red-500 p-2 text-white transition hover:bg-red-700'
+            >
+              ✕
+            </button>
           </div>
         </div>
       )}

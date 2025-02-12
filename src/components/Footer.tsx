@@ -25,10 +25,10 @@ export default function Footer() {
             className='my-auto flex flex-col items-center sm:flex-row'
           >
             <span className='text-2xl font-extrabold text-gray-500'>
-              JAPERNIK
+              IRC STORE
             </span>
             <span className='mt-2 text-sm text-gray-400 sm:ml-6 sm:mt-0'>
-              © Japernik International Ltd. 2024
+              © IrcStore International Ltd. 2025
             </span>
           </div>
           <div
@@ -73,10 +73,10 @@ export default function Footer() {
             <div className='flex items-center justify-center gap-2 text-gray-500 sm:ml-6'>
               <div className='flex items-center rounded-full p-2 px-3 py-2 hover:bg-gray-200'>
                 <TfiWorld className='mr-2' />
-                <span className='text-sm'>English</span>
+                <span className='text-sm'>Indonesia</span>
               </div>
               <div className='flex items-center rounded-full p-2 px-3 py-2 hover:bg-gray-200'>
-                <span className='text-sm'>US$ USD</span>
+                <span className='text-sm'>IDR</span>
               </div>
               <div
                 title='icon'

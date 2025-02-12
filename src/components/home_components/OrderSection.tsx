@@ -17,12 +17,13 @@ const OrderSection = () => {
           Dapatkan produk custom berkualitas dengan desain eksklusif dari kami.
           Klik tombol di bawah untuk melakukan pemesanan!
         </p>
-        <button
-          //   onClick={handleOrderClick}
+        <a
+          href='https://ircstore.orderonline.id/ganci-unik?coupon=POTONGONGKIR20RB'
+          target='_blank'
           className='rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-blue-700'
         >
           Pesan Sekarang
-        </button>
+        </a>
       </div>
     </section>
   );

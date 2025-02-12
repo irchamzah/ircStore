@@ -63,7 +63,8 @@ const InfoDropdown = ({
             key={index}
             className='w-min decoration-gray-500 hover:underline'
           >
-            <Link href={`/categories/${subMenu.slug}`}>
+            {/* <Link href={`/categories/${subMenu.slug}`}> */}
+            <Link href={`#`}>
               <div className='w-max pb-4 font-medium text-gray-500' role='none'>
                 {subMenu.name}
               </div>

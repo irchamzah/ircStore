@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Test = () => {
@@ -76,22 +77,26 @@ const Test = () => {
                 </div>
               ))}
             </div>
-            <div className='mt-10 flex w-full items-center justify-center'>
+
+            {/* Tombol Aksi */}
+            <div className='mt-10 flex flex-col gap-4 md:flex-row md:justify-center'>
+              <Link href='/products-page'>
+                <p className='rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-blue-700'>
+                  Lihat Semua Desain Yang Tersedia -&gt;
+                </p>
+              </Link>
               <a
-                href='#'
-                className='rounded-lg bg-black px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
+                href='https://wa.me/6285117038583?text=Permisi..%20saya%20mau%20tanya%20soal%20gantungan%20kuncinya'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='rounded-lg bg-green-600 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-green-700'
               >
-                Lihat Selengkapnya -&gt;
+                Hubungi Customer Service -&gt;
               </a>
             </div>
-            <div className='mt-10 flex w-full flex-col items-center justify-center'>
-              <a
-                href='#'
-                className='rounded-lg bg-green-500 px-6 py-2 text-white hover:bg-opacity-80 focus:outline-none focus:ring-2 focus:ring-blue-400'
-              >
-                Hubungi Customer Service
-              </a>
-              <p className='mt-2 text-sm text-gray-500'>
+
+            <div className='flex w-full items-center justify-center'>
+              <p className='mt-4 text-gray-600'>
                 Jangan ragu menghubungi kami, kami senang anda bertanya 😇
               </p>
             </div>
