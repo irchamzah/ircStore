@@ -37,7 +37,7 @@ const HomeHero = () => {
           <div className='container mx-auto flex max-h-[500px] min-h-[300px] items-center px-4 py-24 lg:h-[500px]'>
             <div className='h-ful mx-auto flex w-full max-w-2xl flex-col items-center rounded-lg bg-gray-900 bg-opacity-70 p-10 text-center'>
               <h1 className='mb-6 text-3xl font-bold md:text-4xl'>
-                Kustom Gantungan Kunci Couple Lucu Untuk Hadiah Kado Pasangan
+                Kustom Gantungan Kunci Couple Lucu Hadiah Kado Untuk Pasangan
               </h1>
               {/* <SearchService /> */}
               {/* <div className='mb-8 hidden items-center text-sm'>
