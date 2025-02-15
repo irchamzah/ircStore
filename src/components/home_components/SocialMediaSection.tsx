@@ -47,7 +47,7 @@ const SocialMediaSection = () => {
               </h3>
               <iframe
                 className='h-[400px] w-full rounded-lg'
-                src='https://www.youtube.com/embed/_nDqCwyY0lk'
+                src='https://www.youtube.com/embed/S-K8hqX49cg'
                 title='YouTube video player'
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
