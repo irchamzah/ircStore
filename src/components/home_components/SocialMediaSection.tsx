@@ -15,7 +15,7 @@ const SocialMediaSection = () => {
               </h3>
               <iframe
                 className='h-[400px] w-full rounded-lg'
-                src='https://www.instagram.com/p/C6x1-Csvt_w/embed'
+                src='https://www.instagram.com/p/DGFVSDkPZ__/embed'
                 frameBorder='0'
                 allowFullScreen
               ></iframe>
@@ -33,7 +33,7 @@ const SocialMediaSection = () => {
               >
                 <iframe
                   className='h-[400px] w-full rounded-lg'
-                  src='https://www.tiktok.com/embed/7285220489931328769'
+                  src='https://www.tiktok.com/embed/7471530138144951557'
                   frameBorder='0'
                   allowFullScreen
                 ></iframe>
@@ -47,7 +47,7 @@ const SocialMediaSection = () => {
               </h3>
               <iframe
                 className='h-[400px] w-full rounded-lg'
-                src='https://www.youtube.com/embed/59H6Rb8EA4o'
+                src='https://www.youtube.com/embed/_nDqCwyY0lk'
                 title='YouTube video player'
                 frameBorder='0'
                 allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

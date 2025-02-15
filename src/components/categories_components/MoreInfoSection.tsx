@@ -64,19 +64,19 @@ const MoreInfoSection = ({ categories }: { categories: Category[] }) => {
     {
       id: '',
       logo: '',
-      name: 'Selling on Japernik',
+      name: 'Selling on Irc Store',
       slug: '#',
     },
     {
       id: '',
       logo: '',
-      name: 'Buying on Japernik',
+      name: 'Buying on Irc Store',
       slug: '#',
     },
     {
       id: '',
       logo: '',
-      name: 'Japernik Guides',
+      name: 'Irc Store Guides',
       slug: '#',
     },
     {
@@ -166,13 +166,13 @@ const MoreInfoSection = ({ categories }: { categories: Category[] }) => {
     {
       id: '',
       logo: '',
-      name: 'Japernik Pro',
+      name: 'Irc Store Pro',
       slug: '#',
     },
     {
       id: '',
       logo: '',
-      name: 'Japernik Certified',
+      name: 'Irc Store Certified',
       slug: '#',
     },
     {
@@ -184,7 +184,7 @@ const MoreInfoSection = ({ categories }: { categories: Category[] }) => {
     {
       id: '',
       logo: '',
-      name: 'Japernik Enterprise',
+      name: 'Irc Store Enterprise',
       slug: '#',
     },
     {
